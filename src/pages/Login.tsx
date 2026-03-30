@@ -13,7 +13,7 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
-  const [role, setRole] = useState<'admin' | 'trainer' | 'member'>('member');
+  const [role, setRole] = useState<'trainer' | 'member'>('member');
   const [submitting, setSubmitting] = useState(false);
   const { signIn, signUp } = useAuth();
   const navigate = useNavigate();
@@ -99,7 +99,6 @@ export default function Login() {
                     <SelectContent>
                       <SelectItem value="member">Member</SelectItem>
                       <SelectItem value="trainer">Trainer</SelectItem>
-                      <SelectItem value="admin">Admin</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
