@@ -1,2 +1,3 @@
-# Final
-Gym Management System
+# Welcome to your Lovable project
+
+TODO: Document your project here
